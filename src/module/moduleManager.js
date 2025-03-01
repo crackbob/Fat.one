@@ -8,6 +8,7 @@ import Chams from "./modules/visual/Chams";
 import Fly from "./modules/movement/Fly";
 import Speed from "./modules/movement/Speed";
 import Accuracy from "./modules/combat/Accuracy";
+import NoClip from "./modules/movement/NoClip";
 
 export default {
     modules: {},
@@ -39,7 +40,8 @@ export default {
             new Chams(),
             new Fly(),
             new Speed(),
-            new Accuracy()
+            new Accuracy(),
+            new NoClip()
         );
 
         events.on("render", () => {

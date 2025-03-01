@@ -11,10 +11,11 @@ export default class Speed extends Module {
 
     onRender () {
         utils.localPlayer.walkSpeed = this.options["Speed"];
+        utils.localPlayer.flagWalkSpeed = this.options["Speed"];
     }
 
     onDisable () {
-        let localPlayer = hooks.game.getMyPlayer();
-        localPlayer.walkSpeed = 60;
+        utils.localPlayer.walkSpeed = 60;
+        utils.localPlayer.flagWalkSpeed = 45;
     }
 };
