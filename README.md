@@ -1,2 +1,2 @@
 # FAT.ONE
-Utility tool for Vectaria.io
+Utility tool for narrow.one
